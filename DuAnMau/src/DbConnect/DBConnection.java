@@ -20,6 +20,8 @@ public class DBConnection {
     public Connection getConnection() throws Exception {
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         String url = "jdbc:sqlserver://localhost;databaseName=Duan900;user=sa;password=1";
+
+        
         return  DriverManager.getConnection(url);
     }
 
